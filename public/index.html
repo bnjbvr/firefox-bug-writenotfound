@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <script>
+            var datas = '';
+            var req = new XMLHttpRequest();
+            req.open('POST', 'http://127.0.0.1:3000/influxdb/write?db=Mesures&rp=default', true);
+            req.send("mesure " + datas.toString());
+        </script>
+    </body>
+</html>
+
